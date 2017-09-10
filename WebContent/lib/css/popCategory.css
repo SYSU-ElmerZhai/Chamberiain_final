@@ -1,0 +1,66 @@
+.g-pop {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.g-pop .m-pop {
+    display: inline-block;
+    margin: auto;
+}
+
+.m-pop-category {
+    width: 380px;
+    padding: 20px 20px 10px 20px;
+    box-sizing: content-box;
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    font-size: 16px;
+}
+
+.m-pop-category .u-res {
+    position: relative;
+    padding-right: 20px;
+}
+
+.m-pop-category .icon-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.m-pop-category .m-form {
+    display: block;
+    width: 340px;
+    margin: 0 auto;
+}
+
+.m-pop-category select {
+    margin: 15px auto;
+    background: #eeeeee;
+}
+
+.m-pop-category .u-res .u-txt {
+    font-size: 20px;
+    color: #748cd6;
+}
+
+.m-pop-category .m-btn-sure {
+    display: block;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    margin: 15px auto 20px;
+    background: #748cd6;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+}
+
+.f-hide {
+    display: none !important;
+}

@@ -1,1 +1,3 @@
 # Chamberiain_final
+软件杯参赛决赛作品
+项目入口文件是FirstPage_v1.jsp，配配置可看文件项目配置文档

@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: #f2f2f2;
+    min-width: 924px;
+}
+
+.g-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.m-form {
+    margin: 80px auto;
+    position: relative;
+    width: 200px;
+}
+
+.m-form select, .m-form input:not([type='radio']):not([type='checkbox']) {
+    box-sizing: border-box;
+    display: block;
+    padding-left: 10px;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.m-form label:not([for='ifAllYear']) {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.u-unit {
+    top: 6px;
+}
+
+.g-oneline {
+    position: relative;
+}
+
+.g-oneline .g-right {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+}
+
+.g-center {
+    margin: 10px 0 30px;
+    text-align: center;
+}
+
+.m-form button {
+    width: 100%;
+    line-height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: #748cd6;
+    color: #FFF;
+}
+
+::-webkit-inner-spin-button {
+    visibility: hidden;
+}
+::-webkit-calendar-picker-indicator {
+    font-size: 3px;
+    color: #000000;
+}
+::-webkit-calendar-picker-indicator:hover {
+    background: transparent;
+}

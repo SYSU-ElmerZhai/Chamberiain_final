@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据分析页面</title>
+    <link rel="stylesheet" href="lib/css/public/3.3.6/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/public/import.css">
+    <link rel="stylesheet" href="lib/css/Analysis_v1.css">
+</head>
+<body>
+<div class="content" style="height: calc(100vh - 39.5px); min-height: 565px;">
+    <div class="m-content">
+        <div class="centerShow">
+            <div class="m-model">
+                <span class="J_model_all">所有</span>
+                <span class="J_model_year f-active">年</span>
+                <span class="J_model_month">月</span>
+                <select class="J_model_month_dp f-hide">
+                    <option class="J_model_week">按周显示</option>
+                    <option class="J_model_day">按日显示</option>
+                </select>
+            </div>
+            <div class="top-choice J_choice">
+                <select class="J_btn_year"></select>
+                <select class="J_btn_month f-hide"></select>
+                <button class="J_btn_search">查看</button>
+            </div>
+            <div class="bottom-show J-chart" data-type="1">
+                <span>这里画图</span>
+            </div>
+            
+        </div>
+        <div class="right-show-choice">
+            <span class="title"><img src="lib/images/showimg.jpg"></span>
+            <span class="title">智能显示</span>
+            <div class="show-choice">
+                <a class="choice J_img_choice"><img src="lib/images/1.png"></a>
+                <a class="choice J_img_choice"><img src="lib/images/2.png"></a>
+                <a class="choice J_img_choice"><img src="lib/images/3.png"></a>
+                <a class="choice J_img_choice"><img src="lib/images/5.png"></a>
+            </div>
+            <div class="function f-hide">
+                <a class="funcMark f-curMark J-funcMark">数据</a><a class="funcMark J-funcMark">标记</a><i></i>
+                <div class="div-mark">
+                    <a class="funcMarkChoice"><img src="lib/images/choose.png"> </a>
+                    <a class="funcMarkChoice"><img src="lib/images/Mark.png"> </a>
+                </div>
+            </div>
+            <div class="m-chart-wrapper">
+            <div class="m-tlt">进项数据分析图</div>
+                <div class="m-chart">
+                    <div class="u-chart outChart J-chart" data-type="0" data-name="进项">
+                        <span>这里是图</span>
+                    </div>
+                </div>
+                <div class="m-tlt">销项数据分析图</div>
+                <div class="m-chart">
+                    <div class="u-chart outChart J-chart" data-type="0" data-name="销项">
+                        <span>这里是图</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+		
+    </div>
+</div>
+<div class="footer">
+    <span>企业税收统筹及经营状况分析首选品牌，倡导行业良性发展，一体化高效服务</span>
+</div>
+
+<script type="text/javascript" src="lib/js/public/jquery.min.js"></script>
+<script type="text/javascript" src="lib/js/public/echarts.js"></script>
+<script type="text/javascript" src="lib/js/EchartAPI.js"></script>
+<script type="text/javascript" src="lib/js/AnalysisData.js"></script>
+</body>
+</html>

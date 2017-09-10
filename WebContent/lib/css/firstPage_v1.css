@@ -1,0 +1,493 @@
+html
+{
+    font-size: 110%;
+}
+body
+{
+    text-align:center;
+
+    background: -webkit-linear-gradient(left top, #66cdcc, #366c9b);
+    background:    -moz-linear-gradient(right bottom, #66cdcc, #366c9b);
+    background:      -o-linear-gradient: (right bottom, #66cdcc, #366c9b);
+    background:         linear-gradient(right bottom, #66cdcc, #366c9b);
+}
+div.content
+{
+    width: 21.25rem;
+    margin: 12.5625rem auto;
+    margin-bottom: 15.5rem;
+    padding: 1.25rem;
+}
+
+div.content img.title
+{
+    display: block;
+
+    margin-bottom: 4rem;
+}
+div.inputInfo
+{
+    width: 18.75rem;
+    height: 2.5rem;
+    margin-bottom: 1.25rem;
+    padding: 0;
+
+    border: 2px solid #a7d8e6;
+    border-radius: 1.25rem;
+    background-color: #8fb8ca;
+}
+div.inputInfo span img
+{
+    width: 2.1875rem;
+    height: 2.1875rem;
+
+    vertical-align: middle;
+}
+div.inputInfo input
+{
+    width: 13.75rem;
+
+    color: #fff;
+    border: 0;
+    outline: none;
+    background-color: #8fb8ca;
+}
+div.inputInfo a
+{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: .3125rem;
+
+    vertical-align: middle;;
+}
+div.action {
+	padding:0;
+}
+div.action a
+{
+    font-family: PINGFANGREGULAR;
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    color: white;
+}
+a.register
+{	display:inline-block;
+	box-sizing:border-box;
+    margin: .3125rem;
+    margin-left:0;
+}
+a.forgetPassword
+{
+    margin-bottom: .75rem;
+    margin-left: 11.5rem;
+}
+button.logIn
+{
+    font-family: PINGFANGREGULAR;
+    font-size: 1.25rem;
+
+    display: block;
+
+    width: 18.75rem;
+    height: 2.5rem;
+    margin-top: .3125rem;
+
+    color: #1f517d;
+    border: 0;
+    border-radius: 1.25rem;
+    outline: none;
+    background-color: #bfe8eb;
+}
+
+div.register
+{
+    position: absolute;
+    top: 17.1875rem;
+    left: 38%;
+    text-align: center;
+
+    display: none;
+
+    width: 27.9375rem;
+
+    background-color: white;
+    -webkit-box-shadow: 0 0 20px 5px rgba(83,83,83,.66);
+            box-shadow: 0 0 20px 5px rgba(83,83,83,.66);
+}
+div.registerTitle
+{
+    height: 3.125rem;
+    margin-bottom: 3.6875rem;
+
+    background-color: #1abc9c;
+}
+div.registerTitle span
+{
+    font-family: PINGFANGREGULAR;
+    font-size: 1.25rem;
+
+    display: inline-block;
+    float: left;
+
+    margin: .625rem;
+
+    color: white;
+}
+div.registerTitle a
+{
+    display: inline-block;
+    float: right;
+
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: .625rem;
+}
+div.registerInfo,
+div.code
+{
+    margin: 1.4375rem auto;
+}
+div.registerInfo span,
+div.code span
+{
+    font-family: '黑体', '微软雅黑', Serif, 'Sans-serif';
+    font-size: 1.125rem;
+
+    display: inline-block;
+
+    width: 5rem;
+
+    text-align: right;
+
+    color: black;
+}
+div.registerInfo input,
+div.code input
+{
+    width: 14.5rem;
+    height: 2.6875rem;
+
+    border: 1px solid #e1e1e1;
+    border-radius: .3125rem;
+    outline: none;
+}
+div.registerInfo input:focus,
+div.code input:focus
+{
+    border: 2px solid #1abc9c;
+    -webkit-box-shadow: 0 0 2px 3px rgba(118,222,201,.24);
+            box-shadow: 0 0 2px 3px rgba(118,222,201,.24);
+}
+div.registerChecked
+{
+    margin-bottom: 2rem;
+}
+div.registerChecked span
+{
+    font-family: '黑体', '微软雅黑', Serif, 'Sans-serif';
+    font-size: 1.125rem;
+
+    display: inline-block;
+
+    width: 5rem;
+
+    text-align: right;
+
+    color: black;
+}
+div.registerChecked input
+{
+    width: 8rem;
+    height: 2.6875rem;
+
+    border: 1px solid #e1e1e1;
+    border-radius: .3125rem;
+    outline: none;
+}
+div.registerChecked input:focus
+{
+    border: 2px solid #1abc9c;
+    -webkit-box-shadow: 0 0 2px 3px rgba(118,222,201,.24);
+            box-shadow: 0 0 2px 3px rgba(118,222,201,.24);
+}
+div.registerChecked button
+{
+    font-family: '黑体', '微软雅黑', Serif, 'Sans-serif';
+    font-size: 1rem;
+
+    display: inline-block;
+
+    width: 5.6875rem;
+    height: 2.6875rem;
+    margin-left: .675rem;
+    padding: 0;
+
+    cursor: pointer;
+    vertical-align: top;
+
+    color: white;
+    border: 0;
+    outline: none;
+    background-color: #1abc9c;
+}
+div.register input.registerButton
+{
+    font-family: '黑体', '微软雅黑', Serif, 'Sans-serif';
+
+    display: block;
+
+    width: 19rem;
+    height: 2.6875rem;
+    margin: 2rem auto;
+
+    color: white;
+    border: 0;
+    outline: none;
+    background-color: #1abc9c;
+}
+div.register button.registerButton {
+	display:block;
+	width:20rem;
+	height:2.5rem;
+	line-height:2.5rem;
+	color:white;
+	background-color:rgb(26, 188, 156);
+	outline:none;
+	border:0;
+	margin:1rem auto;
+}
+
+div.forgetPassword
+{
+    position: absolute;
+    top: 20.9375rem;
+    left: 35%;
+
+    display: none;
+
+    width: 31.9375rem;
+    height: 20.25rem;
+
+    background-color: white;
+    -webkit-box-shadow: 0 0 1.25rem .3125rem rgba(83,83,83,.66);
+            box-shadow: 0 0 1.25rem .3125rem rgba(83,83,83,.66);
+}
+div.title
+{
+    height: 3.125rem;
+    margin-bottom: 2.8125rem;
+
+    background-color: #1abc9c;
+}
+div.title span
+{
+    font-family: PINGFANGREGULAR;
+    font-size: 1.25rem;
+
+    display: inline-block;
+    float: left;
+
+    margin: .625rem;
+
+    color: white;
+}
+div.title a
+{
+    display: inline-block;
+    float: right;
+
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: .625rem;
+}
+div.neededInfo
+{
+    margin-top: 1.875rem;
+}
+div.neededInfo span
+{
+    font-family: '黑体', '微软雅黑', Serif, 'Sans-serif';
+    font-size: 1.125rem;
+
+    display: inline-block;
+    float: left;
+
+    width: 5rem;
+    margin-top: .8125rem;
+    margin-left: 1.375rem;
+
+    text-align: right;
+
+    color: black;
+}
+div.neededInfo input
+{
+    display: inline-block;
+
+    width: 16.4375rem;
+    height: 2.6875rem;
+    margin-right: 1.25rem;
+    margin-left: 0;
+
+    vertical-align: top;
+
+    border: 1px solid #e1e1e1;
+    border-radius: .3125rem;
+    outline: none;
+}
+div.neededInfo input:focus
+{
+    border: 2px solid #1abc9c;
+    -webkit-box-shadow: 0 0 .125rem .1875rem rgba(118,222,201,.24);
+            box-shadow: 0 0 .125rem .1875rem rgba(118,222,201,.24);
+}
+div.neededInfo button
+{
+    font-family: '黑体', '微软雅黑', Serif, 'Sans-serif';
+    font-size: 1rem;
+
+    display: inline-block;
+
+    width: 5.6875rem;
+    height: 2.6875rem;
+    margin-left: .675rem;
+    padding: 0;
+
+    vertical-align: top;
+
+    color: white;
+    border: 0;
+    outline: none;
+    background-color: #1abc9c;
+}
+div.blank
+{
+    display: inline-block;
+
+    width: 5.6875rem;
+    height: 2.6875rem;
+    margin-left: .675rem;
+}
+div.forgetPassword div.action
+{
+    margin-top: 2.3125rem;
+}
+div.forgetPassword div.action button
+{
+    font-family: PINGFANGREGULAR;
+    font-size: 1.125rem;
+
+    color: white;
+    border: 0;
+    border-radius: .3125rem;
+    outline: none;
+    background-color: #1abc9c;
+}
+
+div.forgetPassword div.action button#neededCancel
+{
+    display: inline-block;
+    float: left;
+
+    width: 10rem;
+    height: 2.5rem;
+    margin-left: 1.375rem;
+}
+div.forgetPassword div.action button#neededNext
+{
+    display: inline-block;
+
+    width: 10rem;
+    height: 2.5rem;
+    margin-left: 6.5625rem;
+}
+
+div.newPassword
+{
+    position: absolute;
+    top: 20.9375rem;
+    left: 35%;
+    text-aligin:center;
+
+    display: none;
+
+    width: 31.9375rem;
+    height: 20.25rem;
+
+    background-color: white;
+    -webkit-box-shadow: 0 0 1.25rem .3125rem rgba(83,83,83,.66);
+            box-shadow: 0 0 1.25rem .3125rem rgba(83,83,83,.66);
+}
+div.newPassword .returnLogIn{
+		display:block;
+	width:20rem;
+	height:2.5rem;
+	line-height:2.5rem;
+	color:white;
+	background-color:rgb(26, 188, 156);
+	outline:none;
+	border:0;
+	margin:1rem auto;
+}
+div.newInfo
+{
+    margin-top: 1.25rem;
+}
+div.newInfo span
+{
+    font-family: '黑体', '微软雅黑', Serif, 'Sans-serif';
+    font-size: 1.125rem;
+
+    text-align: right;
+
+    color: black;
+}
+div.newInfo input
+{
+    width: 14.625rem;
+    height: 2.6875rem;
+    margin-right: .875rem;
+
+    border: 1px solid #e1e1e1;
+    border-radius: .3125rem;
+    outline: none;
+}
+div.newInfo input:focus
+{
+    border: 2px solid #1abc9c;
+    -webkit-box-shadow: 0 0 .125rem .1875rem rgba(118,222,201,.24);
+            box-shadow: 0 0 .125rem .1875rem rgba(118,222,201,.24);
+}
+div.glyphicon-ok
+{
+    width: 1.25rem;
+    height: 1.25rem;
+
+    text-align: center;
+
+    color: white;
+    border-radius: .625rem;
+    background-color: #1abc9c;
+}
+div.newPassword div.action
+{
+    margin-top: 2.3125rem;
+}
+div.newPassword div.action button
+{
+    font-family: '黑体', '微软雅黑', Serif, 'Sans-serif';
+    font-size: 1.125rem;
+
+    width: 24.875rem;
+    height: 3rem;
+
+    color: white;
+    border: 0;
+    outline: none;
+    background-color: #1abc9c;
+}
+div.footer {
+	margin-top:calc(44vh);
+}

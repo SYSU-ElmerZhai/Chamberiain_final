@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据展示</title>
+</head>
+<body>
+<div class="dataDiv"></div>
+<script type="text/javascript" src="../js/public/jquery.min.js"></script>
+<script type="text/javascript" src="proData.js"></script>
+<script>
+    // 更新mock.json方法：将json数据显示到html上，手动复制粘贴到http://tool.oschina.net/codeformat/json
+    // 将格式化后的json手动复制到mock.json文件中
+  $('.dataDiv').html(window.DataAPI.getData({
+    startYear: 2015, // 起始日期
+    endYear: 2018,// 终止日期
+    maxCount: 100// 数据条数
+  }));
+    // 上面的配置项可填可不填
+
+
+
+
+
+
+
+    // 获取mock.json数据方法
+//    $.ajax({
+//      url: 'mock.json',
+//      type: 'GET',
+//      dataType: 'json',
+//      cache: false,
+//      async: false,
+//      success: function(res) {
+//        try {
+//          // 获取数据为res，自行操作
+//         $('.dataDiv').html(JSON.stringify(res));
+//        } catch (e) {
+//          alert(e);
+//        }
+//      },
+//      error: function() {
+//        alert('检查一下路径是不是错啦？？？');
+//      }
+//    });
+</script>
+</body>
+</html>

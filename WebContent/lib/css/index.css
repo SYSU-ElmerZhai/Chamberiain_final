@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.g-doc {
+  display: flex;
+  min-height: 100vh;
+  min-width: 1190px;
+  justify-content: center;
+}
+.g-doc > .g-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.g-doc > .g-wrap.g-wrap-grow4 {
+  flex-grow: 4;
+}
+.m-part0 {
+  flex-direction: column;
+  width: 350px;
+  background: #142144;
+  color: #FFF;
+}
+.m-part0 .m-tlt {
+  display: flex;
+  justify-content: center;
+  height: 95px;
+}
+.m-part0 .m-tlt > span {
+  margin-top: 20px;
+}
+.m-part0 .m-tlt .u-tlt0 {
+  font-size: 40px;
+}
+.m-part0 .m-tlt .u-tlt1 {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.m-list1 {
+  flex: 1;
+  width: 100%;
+  list-style: none;
+}
+.m-list1 .u-list-item {
+  position: relative;
+  height: 85px;
+  line-height: 85px;
+  padding-left: 110px;
+  cursor: pointer;
+  transition: display 2s;
+}
+.m-list1 .u-list-item::before,
+.m-list1 .u-list-item.f-active::before {
+  content: '';
+  position: absolute;
+  display: none;
+  width: 10px;
+  height: 90px;
+  top: -5px;
+  left: 0;
+  background: #647cc6;
+}
+.m-list1 .u-list-item:hover,
+.m-list1 .u-list-item.f-active {
+  background: #1e3054;
+}
+.m-list1 .u-list-item:hover::before,
+.m-list1 .u-list-item.f-active::before {
+  display: block;
+}
+.m-list1 .u-list-item > span {
+  display: inline-block;
+  font-size: 22px;
+  vertical-align: middle;
+}
+.m-list1 .u-list-item .u-icon {
+  display: inline-block;
+  margin-right: 20px;
+  color: #7191dd;
+}
+.u-list-item .icon-down_menu {
+  position: absolute;
+  right: 20px;
+  top: 32px;
+}
+.u-list-item.u-xs-item > span {
+  font-size: 18px;
+}
+.g-header {
+  width: 100%;
+  height: 95px;
+  line-height: 95px;
+  text-align: right;
+  font-size: 14px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.g-header.f-login-out .m-login-in {
+  display: none;
+}
+.g-header.f-login-out .m-login-out {
+  display: block;
+}
+.g-header.f-login-in .m-login-in {
+  display: block;
+}
+.g-header.f-login-in .m-login-out {
+  display: none;
+}
+.g-header .m-login-in > div {
+  display: inline-block;
+}
+.g-header .m-login-in .icon-photo {
+  vertical-align: middle;
+  font-size: 30px;
+}
+.g-header .m-login-in .u-user-info {
+  margin-left: 10px;
+}
+.g-header .m-login-in .u-user-info::before {
+  content: '用户';
+  margin-right: 10px;
+}
+.g-header .m-login-in .u-exit {
+  margin-left: 10px;
+  margin-right: 35px;
+}
+.g-header .m-login-in .u-exit::after {
+  content: '退出';
+}
+.g-header {
+  position: relative;
+}
+.g-header .u-cur-timer {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  color: #888;
+  font-size: 16px;
+}
+.f-hide {
+  display: none!important;
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>查找</title>
+    <link rel="stylesheet" href="lib/css/public/icon.css">
+    <link rel="stylesheet" href="lib/css/search.css">
+    <link rel="stylesheet" href="lib/css/popCategory.css">
+</head>
+<body>
+<div class="g-pop J_pop f-hide">
+    <form class="m-pop m-pop-edit f-hide">
+        <div class="m-tlt"><span class="J_pop_classify"></span>数据修改<span class="icon-close J_btn_close"></span></div>
+        <div class="m-dataInput">
+            <label>发票代码<i style="color: #F00">(不能修改)</i></label><input type="text" class="J_pop_invoiceCode" style="color: #888" readonly/>
+            <label>发票号码<i style="color: #F00">(不能修改)</i></label><input type="text" class="J_pop_invoiceName" style="color: #888" readonly/>
+            <label>类型</label>
+            <input type="text" class="J_category J_pop_category">
+            <label>详情(请务必填入具体事项)</label><input type="text" class="J_pop_detail" placeholder="例如：铅笔橡皮" />
+            <label>开票日期</label><input class="J-datePicker f-hide" readonly/><input type="text" class="time J_pop_time" required/>
+            <label>金额（元）</label>
+            <div class="m-inputMoney outMoney"><input type="number" class="J_pop_money"/></div>
+        </div>
+        <button class="m-btn J_btn_submit" type="submit">确认录入</button>
+    </form>
+    <div class="m-pop m-pop-category f-hide">
+        <form class="m-form">
+            <div class="u-res">已选择商品类型：<span class="u-txt J_txt_res"></span><span class="icon-close J_btn_close f-not-allClose"></span></div>
+            <select class="m-select J_select_1" required>
+                <option value=""></option>
+            </select>
+            <select class="m-select J_select_2 f-hide" required>
+                <option value=""></option>
+            </select>
+            <select class="m-select J_select_3 f-hide" required>
+                <option value=""></option>
+            </select>
+            <select class="m-select J_select_4 f-hide" required>
+                <option value=""></option>
+            </select>
+            <button class="m-btn-sure J_btn_sure_category" type="submit">确认</button>
+        </form>
+    </div>
+</div>
+<div class="g-content">
+    <form class="m-form">
+        <label>请选择要查找的数据内容</label>
+        <select class="m-classify J_select_classify" name="selectClassify">
+            <option value="input">进项数据</option>
+            <option value="output">销项数据</option>
+        </select>
+        <label>筛选条件</label>
+        <select class="m-condition J_condition">
+            <option value="time">时间</option>
+            <option value="cate">类型</option>
+        </select>
+        <input class="u-time J_select_time" type="month" required/>
+        <input class="u-cotegory J_category f-hide" placeholder="请输入类型..." required readonly/>
+        <button class="u-btn J_btn_search" type="button">查找</button>
+    </form>
+    <table class="m-table J_table" id="searchTable">
+        <tr>
+            <th>发票代码</th>
+            <th>发票号码</th>
+            <th>类型</th>
+            <th>金额</th>
+            <th>开票时间</th>
+            <th>操作</th>
+        </tr>
+
+    </table>
+    <button class="u-btn J_btn_download" onclick="proExcel('searchTable')">下载</button>
+</div>
+<script type="text/javascript" src="lib/js/public/jquery.min.js"></script>
+<script type="text/javascript" src="lib/js/public/proExcel.js"></script>
+<script type="text/javascript" src="lib/js/search.js"></script>
+<script type="text/javascript" src="lib/js/popCategory.js"></script>
+</body>
+</html>

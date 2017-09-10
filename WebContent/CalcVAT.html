@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>增值税计算</title>
+    <link rel="stylesheet" href="lib/css/calcVAT.css">
+</head>
+<body>
+<div class="g-content">
+    <form class="m-form">
+        <label for="method">计算方法</label>
+        <select name="method" id="method">
+            <option value="1">直接计算法</option>
+            <option value="2">计算方法2</option>
+            <option value="3">计算方法3</option>
+        </select>
+        <div class="g-oneline">
+            <label for="year">年份</label>
+            <div class="g-right">
+                <input name="ifAllYear" id="ifAllYear" type="checkbox" value="全年"/>
+                <label for="ifAllYear">全年</label>
+            </div>
+        </div>
+        <select name="year" id="year"></select>
+        <label for="month">月份</label>
+        <select name="month" id="month"></select>
+        <label for="taxRate">税率（%）</label>
+        <div class="g-oneline">
+            <input name="taxRate" id="taxRate" type="number" required/>
+        </div>
+        <div class="g-result">
+        	<label for="resultShow">计算结果</label>
+        	<input type="text" class="J_resultShow" name="resultShow">
+        </div>
+        <div class="g-center">
+            <input name="ifTax" type="radio" class="J_ifTax" value="1"/>含税&nbsp;&nbsp;
+            <input name="ifTax" type="radio" class="J_ifTax" value="0"/>不含税
+        </div>
+        <button type="submit" class="J_btn_calc">计算</button>
+        <div class="g-center J_res"></div>
+    </form>
+</div>
+<script type="text/javascript" src="lib/js/public/jquery.min.js"></script>
+<script type="text/javascript" src="lib/js/calcVAT.js"></script>
+</body>
+</html>

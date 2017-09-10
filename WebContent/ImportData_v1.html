@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>录入界面</title>
+    <link rel="stylesheet" href="lib/css/public/3.3.6/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/public/jquery-ui.min.css">
+    <link rel="stylesheet" href="lib/css/public/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="lib/css/public/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="lib/css/public/import.css">
+    <link rel="stylesheet" href="lib/css/ImportData_v1.css">
+    <link rel="stylesheet" href="lib/css/popCategory.css">
+    <link rel="stylesheet" href="lib/css/public/icon.css">
+</head>
+<body>
+<div class="g-pop J_pop f-hide">
+    <div class="m-pop m-pop-category f-hide">
+        <form class="m-form">
+            <div class="u-res">已选择商品类型：<span class="u-txt J_txt_res"></span><span class="icon-close J_btn_close"></span>
+            </div>
+            <select class="m-select J_select_1" required>
+                <option value=""></option>
+            </select>
+            <select class="m-select J_select_2 f-hide" >
+                <option value=""></option>
+            </select>
+            <select class="m-select J_select_3 f-hide" >
+                <option value=""></option>
+            </select>
+             <select class="m-select J_select_4 f-hide" >
+                <option value=""></option>
+            </select>
+            <button class="m-btn-sure J_btn_sure_category" type="submit">确认</button>
+        </form>
+    </div>
+</div>
+<div class="g-content">
+    <form class="m-form moneyIn">
+        <div class="m-tlt">进项数据录入</div>
+        <div class="m-dataInput">
+            <label>发票代码</label><br><input type="text" class="invoiceCode in_code" required/><br>
+            <label>发票号码</label><br><input type="text" class="invoiceName in_name" required/><br>
+            <label>类型</label><br>
+            <input type="text" class="category J_category in_category" data-category="" value=""><br>
+            <label>详情(请务必填入具体事项)</label><br><input type="text" class="remark in_remark" placeholder="例如：铅笔橡皮" /><br>
+            <label>开票日期</label><input class="J-datePicker f-hide" readonly/><br><input type="text" class="time J_time in_time"
+                                                                                       required/><br>
+            <label>金额（元）</label><br>
+            <div class="m-inputMoney outMoney in_money"><input type="number" class="input J_money"/></div>
+        </div>
+        <div class="u-chart inChart J-chart" data-type="0" data-name="进项">
+            <span>这里是图</span>
+        </div>
+        <button class="m-btn J_btn_submit J_datain" type="submit">确认录入</button>
+    </form>
+    <form class="m-form moneyOut">
+        <div class="m-tlt">销项数据录入</div>
+        <div class="m-dataInput">
+            <label>发票代码</label><br><input type="text" class="invoiceCode out_name" required/><br>
+            <label>发票号码</label><br><input type="text" class="invoiceName" required/><br>
+            <label>类型</label><br>
+            <input type="text" class="category J_category" data-category="" readonly value=""><br>
+            <label>详情(请务必填入具体事项)</label><br><input type="text" class="remark" placeholder="例如：铅笔橡皮" required/><br>
+            <label>开票日期</label><input class="J-datePicker f-hide" readonly/><br><input type="text" class="time J_time"
+                                                                                       required/><br>
+            <label>金额（元）</label><br>
+            <div class="m-inputMoney outMoney"><input type="number" class="input J_money"/></div>
+        </div>
+        <div class="u-chart outChart J-chart" data-type="0" data-name="销项">
+            <span>这里是图</span>
+        </div>
+        <button class="m-btn J_btn_submit J_dataout" type="submit">确认录入</button>
+    </form>
+</div>
+<div class="footer">
+    <span>企业税收统筹及经营状况分析首选品牌，倡导行业良性发展，一体化高效服务</span>
+</div>
+
+<script type="text/javascript" src="lib/js/public/jquery.min.js"></script>
+<script type="text/javascript" src="lib/js/public/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/js/public/jquery-ui.min.js"></script>
+<script type="text/javascript" src="lib/js/public/jQuery-ui-datepicker-zh-CN.js"></script>
+<script type="text/javascript" src="lib/js/ImportData_v1.js"></script>
+<script type="text/javascript" src="lib/js/public/echarts.js"></script>
+<script type="text/javascript" src="lib/js/EchartAPI.js"></script>
+<script type="text/javascript">
+  let _date = new Date(),
+    _config = {
+      type: TYPE_LAST_WEEK,
+      year: _date.getFullYear(),
+      month: _date.getMonth() + 1,
+      day: _date.getDate(),
+      lastDay: 7
+    };
+  window.EchartsAPI.EchartsHandle($('.J-chart'), _config);
+</script>
+<script type="text/javascript" src="lib/js/popCategory.js"></script>
+</body>
+</html>

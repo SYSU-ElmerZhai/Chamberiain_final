@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.g-content {
+    margin: 0;
+    padding: 15px 0;
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    overflow: scroll;
+}
+.g-content .m-form {
+    width: 280px;
+    margin: 0 auto;
+}
+.m-form label, .m-form input, .m-form select {
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.m-form label {
+    margin: 15px 0 5px;
+}
+.m-form .u-time, .m-form .u-cotegory {
+    margin: 20px 0;
+}
+.g-content .m-table, th, td{
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+    background: #FFF;
+    text-align: center;
+}
+.m-table tr {
+    height: 30px;
+}
+.m-table th, .m-table td {
+    width: 18%;
+}
+.m-table th:last-child, .m-table td:last-child {
+    width: 10%;
+}
+.f-hide {
+    display: none!important;
+}
+.u-btn{
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    color: #FFF;
+    background-color: #738bd5;
+    border-radius: 5px;
+}
+/**** 弹窗 ****/
+.g-pop {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.g-pop .m-pop-edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 380px;
+    padding: 0 0 20px;
+    margin: auto;
+    background: #FFF;
+    box-sizing: border-box;
+}
+
+.m-pop-edit .m-tlt {
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    line-height: 40px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(125, 125, 125, 0.3);
+}
+.m-pop-edit .m-tlt .icon-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #787878;
+    cursor: pointer;
+}
+.m-pop-edit .m-dataInput {
+    margin: 10px 0 0 60px;
+}
+.m-pop-edit .m-dataInput label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.m-pop-edit .m-dataInput input {
+    display: block;
+    width: 250px;
+    padding-left: 5px;
+}
+.m-pop-edit .m-btn {
+    display: block;
+    margin: 30px auto 0;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFF;
+    background-color: #748bd5;
+    border: none;
+    border-radius: 5px;
+}
+.f-hide {
+    display: none;
+}

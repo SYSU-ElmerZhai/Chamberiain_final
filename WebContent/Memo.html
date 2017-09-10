@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>memo</title>
+    <link rel="stylesheet" href="lib/css/public/icon.css">
+    <link rel="stylesheet" href="lib/css/memo.css">
+</head>
+<body>
+<div class="g-sd J_pop f-hide">
+    <div class="m-pop m-pop-add J_pop_add f-hide">
+        <p class="m-tlt">新建事项<span class="icon-close J_btn_close"></span></p >
+        <form class='J_form'>
+            <label for="thingName">事件名</label><br>
+            <input type="text" name="name" id="thingName" required placeholder='请输入...'/><br>
+            <label for="thingDate">时间</label><br>
+            <input type="date" name="date" id="thingDate" required>
+            <input type="time" name="time" id="thingTime" required>
+            <br>
+            <button type="submit" class=" J_btn_sure">确认添加</button>
+        </form>
+    </div>
+    <div class="m-pop m-pop-update J_pop_update f-hide">
+        <p class="m-tlt">修改事项<span class="icon-close J_btn_close"></span></p >
+        <input class="f-hide" id="thingId2"/>
+        <input class="f-hide" id="thingStatus2"/>
+        <form class='J_form2'>
+            <label for="thingName2">事件名</label><br>
+            <input type="text" name="name" id="thingName2" required placeholder='请输入...'/><br>
+            <label for="thingDate2">时间</label><br>
+            <input type="date" name="date" id="thingDate2" required>
+            <input type="time" name="time" id="thingTime2" required>
+            <br>
+            <button type="submit" class=" J_btn_sure2">确认修改</button>
+        </form>
+    </div>
+</div>
+<div class="g-content">
+    <div class="m-part m-part1">
+        <div class="u-tlt">待办事项(<span id="readyCount"></span>)<span class="icon-add J_btn_add"></span></div>
+        <ul class="m-list J_list_ready">
+        </ul>
+    </div>
+    <div class="m-part m-part2">
+        <div class="u-tlt">今天(<span id="todayCount"></span>)</div>
+        <ul class="m-list J_list_today">
+        </ul>
+    </div>
+    <div class="m-part m-part3">
+        <div class="u-tlt">已过期(<span id="historyCount"></span>)</div>
+        <ul class="m-list  J_list_history">
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="lib/js/public/jquery.min.js"></script>
+<script type="text/javascript" src="lib/js/memo.js"></script>
+</body>
+</html>

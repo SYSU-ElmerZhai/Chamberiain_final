@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="lib/css/home.css">
+</head>
+<body>
+<div class="g-content">
+    <div class="m-part1">
+        <div class="m-charts-wrap J-chart" data-type="5"></div>
+        <div class="m-charts-wrap J-chart" data-type="6"></div>
+    </div>
+    <div class="m-part2">
+        <div class="m-tlt">待办事项</div>
+        <ul class="m-list2 J_list">
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="lib/js/public/jquery.min.js"></script>
+<script type="text/javascript" src="lib/js/public/echarts.js"></script>
+<script type="text/javascript" src="lib/js/public/EchartsTheme.js"></script>
+<script type="text/javascript" src="lib/js/EchartAPI.js"></script>
+<script type="text/javascript" src="lib/js/home.js"></script>
+<script>
+    let _data = new Date();
+  window.EchartsAPI.EchartsHandle($('.J-chart'), {
+    type: TYPE_DAY,
+    year: _data.getFullYear(),
+    month: _data.getMonth() + 1
+  });
+  console.log({
+    type: TYPE_DAY,
+    year: _data.getFullYear(),
+    month: _data.getMonth() + 1
+  })
+  $(window).resize(function() {
+    window.EchartsAPI.resizeCharts();
+  });
+</script>
+</body>
+</html>
